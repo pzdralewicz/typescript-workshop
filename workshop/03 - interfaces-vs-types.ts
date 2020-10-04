@@ -97,11 +97,20 @@ type Geometry = Point | LineString | Polygon;
 // QUIZ - what does below mean?
 type Properties = { [name: string]: any };
 
+// notice "?" next to some fields
 interface Feature {
   type: "Feature";
   geometry: Geometry;
   id?: ID;
   properties?: Properties;
+}
+
+// interface can contain functions and arrays in its definitions
+interface FeaturesContext {
+  features: Feature[];
+  activeFeature?: Feature;
+  setActiveFeature: (feature: Feature) => void;
+  getFeatureById: (id: ID) => Feature;
 }
 
 // types and interfaces have a different syntax in some cases but

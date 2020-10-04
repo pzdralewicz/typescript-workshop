@@ -7,4 +7,4 @@
 
 // JSON conversion to type definition: https://quicktype.io/typescript/ (VSCode extension inside) - remember to check generated types yourself
 
-// best TS book - https://sklep.typeofweb.com/produkt/ksiazka-typescript-na-powaznie/ (probably soon to be available)
+// so far the best TS book - https://sklep.typeofweb.com/produkt/ksiazka-typescript-na-powaznie/ (probably soon to be available)
