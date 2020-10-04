@@ -80,6 +80,7 @@ interface Polygon {
 
 type Geometry = Point | LineString | Polygon;
 type ID = string | number;
+// QUIZ - what does below mean?
 type Properties = { [name: string]: any };
 
 interface Feature {
