@@ -48,10 +48,25 @@ size = 10;
 // size = 17; - error, has to be one of specified above
 
 // union type - a type that matches at least ONE OF provided types
+type ID = string | number;
 
 // intersection type - a type that matches ALL OF provided types
+interface Student {
+  school: string;
+  id: ID;
+}
 
-// we can do those operations on complex types
+// IWorker because Worker is a basic type for Browser API Workers
+interface IWorker {
+  id: ID;
+  position: "Developer" | "Manager" | "CEO";
+}
+
+const Paweł: Student & IWorker = {
+  id: 10,
+  position: "Developer",
+  school: "Politechnika Warszawska",
+};
 
 // types and interfaces can be mixed together - to simplify understanding:
 // TYPES - use for simple types, merging, mixing, etc.
@@ -79,7 +94,6 @@ interface Polygon {
 }
 
 type Geometry = Point | LineString | Polygon;
-type ID = string | number;
 // QUIZ - what does below mean?
 type Properties = { [name: string]: any };
 
