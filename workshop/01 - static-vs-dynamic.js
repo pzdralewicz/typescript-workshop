@@ -6,7 +6,6 @@ id = [];
 let id2 = 20;
 // in the flow of application we can lose track of what id type is
 
-// what will return from calling subtractNumbers(10, "4" , 3)?
 const subtractNumbers = (number1, number2) => {
   return number1 - number2;
 };
@@ -14,7 +13,6 @@ const subtractNumbers = (number1, number2) => {
 // QUIZ - whats the value?
 id = subtractNumbers(id2, 10);
 
-// QUIZ - what will return from calling addThreeNumbers(3, 4, "3")?
 const addThreeNumbers = (number1, number2, number3) => {
   return number1 + number2 + number3;
 };

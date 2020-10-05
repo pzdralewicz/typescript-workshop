@@ -56,7 +56,6 @@ interface Student {
   id: ID;
 }
 
-// IWorker because Worker is a basic type for Browser API Workers
 interface IWorker {
   id: ID;
   position: "Developer" | "Manager" | "CEO";

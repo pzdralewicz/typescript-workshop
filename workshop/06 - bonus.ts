@@ -8,3 +8,8 @@
 // JSON conversion to type definition: https://quicktype.io/typescript/ (VSCode extension inside) - remember to check generated types yourself
 
 // so far the best TS book - https://sklep.typeofweb.com/produkt/ksiazka-typescript-na-powaznie/ (probably soon to be available)
+
+// typing dynamic object keys
+// type GenericJSON = {
+//   [key: string]: any
+// }
