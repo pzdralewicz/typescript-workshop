@@ -37,3 +37,22 @@ const example: Example = {
     },
   ],
 };
+
+// handling functions
+interface ComponentProps {}
+
+const component = {
+  onDelete: (item) => {
+    console.log("item deleted");
+  },
+  onEdit: (item) => {
+    console.log("item modified");
+  },
+  onCancel: () => {
+    console.log("operation canceled");
+  },
+  selectedItem: {
+    id: 123,
+    description: "mock item",
+  },
+};
